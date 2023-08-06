@@ -1,78 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
 body {
   background-color: #222;
   transition: background-color 1s;
+  font-family: 'Poppins', sans-serif; 
+  color: #31245C;
 }
 
 .main {
   display: none;
 }
 
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: burlywood;
+}
+
 /* Start Preloader */
 .preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .loader {
-    display: block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #007CC2;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #007CC2;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
 
 .loader:before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #FFF500;
-    -webkit-animation: spin 3s linear infinite;
-    animation: spin 3s linear infinite;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #FFF500;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
 }
 
 .loader:after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #DA251C;
-    -webkit-animation: spin 1.5s linear infinite;
-    animation: spin 1.5s linear infinite;
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #DA251C;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
 }
 
 @-webkit-keyframes spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 @keyframes spin {
-    0% {
+  0% {
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -85,3 +96,93 @@ body {
 }
 
 /* End Preloader */
+
+/* Start Header */
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  max-width: 450px;
+  box-sizing: border-box;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.header-logo img {
+  max-height: 200px;
+  max-width: 100%;
+}
+
+.header-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 26px;
+  color: #0F2A5B;
+  line-height: 100%;
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%; 
+  text-transform: capitalize;
+}
+
+.nav-link {
+  color: #0F2A5B;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.5s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #DA251C;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.nav-link:hover {
+  color: #DA251C;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+}
+
+.logo-social {
+  font-size: 30px; 
+}
+
+.social {
+  display: flex;
+}
+
+.logo-social {
+  font-size: 30px;
+  color: #0F2A5B;
+  transition: color 0.2s ease;
+}
+
+.logo-social{
+  margin-left: 10px;
+}
+
+.social-icon:hover {
+  color: red;
+}
+
+/* End Header */
