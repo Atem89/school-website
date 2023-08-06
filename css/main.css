@@ -1,11 +1,12 @@
 body {
-    background-color: #222;
-    transition: background-color 1s; 
+  background-color: #222;
+  transition: background-color 1s;
 }
 
 .main {
-    display: none;
+  display: none;
 }
+
 /* Start Preloader */
 .preloader {
     position: fixed;
@@ -25,7 +26,7 @@ body {
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: blue;
+    border-top-color: #007CC2;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
 }
@@ -39,7 +40,7 @@ body {
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: red;
+    border-top-color: #FFF500;
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
 }
@@ -53,39 +54,34 @@ body {
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: yellow;
+    border-top-color: #DA251C;
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }
 
 @-webkit-keyframes spin {
     0% {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
     }
     100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
     }
 }
-
 @keyframes spin {
     0% {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
+
 /* End Preloader */
-
-
-h1 {
-    color:blueviolet;
-}
