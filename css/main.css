@@ -181,7 +181,11 @@ body {
   margin-left: 10px;
 }
 
-.social-icon:hover {
+.social-icon-facebook:hover {
+  color: blue;
+}
+
+.social-icon-youtube:hover {
   color: red;
 }
 
