@@ -271,3 +271,65 @@ body {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 /* End Slider */
+
+/* Start Welcome */
+
+.welcome-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #231834;
+  color: #fff;
+  border-radius: 5px;
+}
+.welcome-list {
+  display: flex;
+  column-gap: 20px;
+  padding: 20px;
+}
+.welcome-item {
+  max-width: 230px;
+  border: 2px solid #fff;
+  border-radius: 10px; 
+  padding: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0.9; 
+  transition: border-color 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+}
+
+.welcome-item:hover {
+  border-color: #2696E9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  opacity: 1; 
+}
+
+.welcome-item h2 {
+  font-size: 24px;
+  color: #FF8700
+}
+
+.welcome-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+}
+
+.welcome-title p {
+  color: #FF8700
+}
+
+.logo-welcome {
+  font-size: 100px;
+  color: #fff;
+}
+
+.logo-welcome:hover {
+  color: #2696E9;
+}
+/* End Welcome */
