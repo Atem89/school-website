@@ -473,3 +473,19 @@ body {
 }
 
 /* End Institution in Pictures */
+
+/* Start Parteneri */
+
+.title-line__parteneri{
+  height: 3px;
+  width: 160px;
+  background: #0F2A5B;
+}
+
+.parteneri-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* End Parteneri */
