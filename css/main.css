@@ -352,7 +352,7 @@ body {
   column-gap: 20px;
 }
 
-.title-line{
+.title-line__news{
   height: 3px;
   width: 260px;
   background: #0F2A5B;
@@ -395,4 +395,81 @@ body {
 .news-data {
   font-size: 18px;
 }
+
+.news-button {
+  padding-top: 10px;
+}
+  
+.news-button a {
+  line-height:1em;
+  letter-spacing:0.06em;
+  font-weight:normal;
+  font-size:14px;
+  text-decoration:none;
+  color:#fff;
+  background:#0F2A5B;
+  display:inline-block;
+  padding:10px 10px 10px 10px;
+  transition:background 200ms;
+  border-radius:4px;
+}
+  
+.news-button a:hover {
+  background:#FF8700;
+  color: #ffffff;
+}
+  
+.news-button a:after {
+  font-family: 'FontAwesome', sans-serif;
+  font-weight:300;
+  content: "\f105";
+  margin-left:20px;
+  color:#fff;
+  font-size:16px;
+  vertical-align:middle;
+  transition:color 200ms;
+}
+  
+.news-button a:hover:after {
+  color:#ffffff;
+}
+
 /* End News */
+
+/* Start Institution in Pictures */
+.title-line__institution-in-pictures {
+  height: 3px;
+  width: 400px;
+  background: #0F2A5B;
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  overflow: hidden;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  margin: 5px;
+  position: relative;
+}
+
+.box-container img {
+  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+}
+
+.column:first-child .row:nth-child(2) img,
+.column:last-child .row:nth-child(2) img {
+  height: calc(202%); 
+}
+
+/* End Institution in Pictures */
