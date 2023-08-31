@@ -571,3 +571,16 @@ body {
 }
 
 /* End About*/
+
+/* Start Footer */
+
+.footer-copyright {
+  background-color: #31245C;
+  color: #ffffff;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+/* End Footer */
