@@ -522,20 +522,15 @@ body {
 
 .about-nav-list {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   gap: 10px; 
-  list-style: none;
   margin: 0;
-  padding: 0;
+  padding-bottom: 20px;
 }
 
-.about-box {
+.nav-link:last-child {
   display: flex;
-}
-
-.about-image {
-  max-width: 200px; 
-  margin-right: 20px; 
+  justify-content: flex-end;
 }
 
 .social {
@@ -567,7 +562,7 @@ body {
 }
 
 .contact-info p {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 /* End About*/
