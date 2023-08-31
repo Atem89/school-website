@@ -1,4 +1,5 @@
 /* Start Preloader */
+/*
 window.addEventListener("load", function () {
     
     setTimeout(function () {
@@ -12,6 +13,7 @@ window.addEventListener("load", function () {
         content.style.display = "block";
     }, 1000); 
 });
+*/
 /* End Preloader */
 
 /* Start Slider */
