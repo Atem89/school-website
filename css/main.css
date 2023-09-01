@@ -12,6 +12,11 @@ body {
   margin: 0 auto;
 }
 
+.container-large {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 /* Start Preloader */
 /*  
 body {
@@ -103,6 +108,29 @@ body {
 }
 */
 /* End Preloader */
+
+/* Start Announces*/
+
+.announces-post {
+  display: flex;
+  justify-content: center;
+  background-color: #31245C;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.announces-post a {
+  font-size: 16px;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.announces-post a:hover {
+  color: #FF8700;
+}
+
+/* End Announces */
+
 
 /* Start Header */
 
@@ -206,7 +234,7 @@ body {
 
 .slider-list {
   position: relative;
-  height: 500px;
+  height: 600px;
   margin: 10px;
   background: #ffffff;
 }
@@ -284,16 +312,18 @@ body {
 
 .welcome-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #231834;
   color: #fff;
   border-radius: 5px;
 }
+
 .welcome-list {
   display: flex;
   column-gap: 20px;
   padding: 20px;
 }
+
 .welcome-item {
   max-width: 230px;
   border: 2px solid #fff;
