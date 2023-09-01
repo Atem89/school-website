@@ -10,7 +10,7 @@ window.addEventListener("load", function () {
         
         const content = document.getElementById("main");
         content.style.display = "block";
-    }, 1000); 
+    }, 500); 
 });
 
 /* End Preloader */
