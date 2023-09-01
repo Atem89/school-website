@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 body {
-  background-color: #ffffff;
+  background-color: #222;
   transition: background-color 1s;
   font-family: 'Poppins', sans-serif; 
   color: #31245C;
 }
-
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -18,13 +17,6 @@ body {
 }
 
 /* Start Preloader */
-/*  
-body {
-  background-color: #222;
-  transition: background-color 1s;
-  font-family: 'Poppins', sans-serif; 
-  color: #31245C;
-}
 
 .main {
   display: none;
@@ -106,7 +98,7 @@ body {
     transform: rotate(360deg);
   }
 }
-*/
+
 /* End Preloader */
 
 /* Start Announces*/
