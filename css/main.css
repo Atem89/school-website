@@ -162,7 +162,7 @@ body {
   display: flex;
   column-gap: 20px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 100%; 
   text-transform: capitalize;
@@ -195,10 +195,6 @@ body {
   opacity: 1;
 }
 
-.logo-social {
-  font-size: 30px; 
-}
-
 .social {
   display: flex;
 }
@@ -228,7 +224,7 @@ body {
 .slider-list {
   position: relative;
   height: 600px;
-  margin: 10px;
+  margin: 20px;
   background: #ffffff;
 }
 
@@ -306,7 +302,7 @@ body {
 .welcome-nav {
   display: flex;
   justify-content: center;
-  background-color: #231834;
+  background-color: #31245C;
   color: #fff;
   border-radius: 5px;
 }
@@ -537,11 +533,45 @@ body {
 }
 
 .about-item {
-  flex-basis: calc(33.33% - 10px); 
+  box-sizing: border-box;
+  margin-right: 10px; 
+  padding: 20px;
+  flex: 1; 
+  max-width: 50%;
+}
+
+.about-item-2 {
   box-sizing: border-box;
   margin-right: 10px; 
   padding: 20px;
 }
+
+.about-item-2 h4 {
+  text-align: center;
+  font-size: 22px;
+  padding-bottom: 10px;
+  color: #FF8700;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contact-item:hover {
+  color: #DA251C;
+}
+
+.contact-item a {
+  margin-right: 10px; 
+}
+
 
 .about-nav-list {
   display: flex;
@@ -551,54 +581,43 @@ body {
   padding-bottom: 20px;
 }
 
-.nav-link:last-child {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.social {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  align-items: center;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
-  text-align: center; 
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-}
-
-.contact-item:hover {
-  color: #DA251C;
-}
-
-.contact-item a {
-  margin-right: 5px; 
-}
-
-.contact-info p {
-  padding-bottom: 10px;
-}
-
 /* End About*/
 
 /* Start Footer */
 
-.footer-copyright {
+.footer-box {
   background-color: #31245C;
   color: #ffffff;
   font-size: 14px;
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.logo-social-footer {
+  font-size: 30px;
+  color: #ffffff;
+  transition: color 0.2s ease;
+}
+
+.logo-social-footer {
+  margin-left: 10px;
+}
+
+.social-icon-facebook:hover {
+  color: blue;
+}
+
+.social-icon-youtube:hover {
+  color: red;
 }
 
 /* End Footer */
