@@ -6,6 +6,7 @@ body {
   font-family: 'Poppins', sans-serif; 
   color: #31245C;
 }
+
 .container {
   max-width: 1320px;
   padding: 0 20px;
@@ -106,10 +107,11 @@ body {
 
 .announces-post {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #31245C;
   padding: 10px 0;
   margin-bottom: 20px;
+  align-items: center;
 }
 
 .announces-post a {
@@ -122,15 +124,51 @@ body {
   color: #FF8700;
 }
 
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.social span {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.logo-social {
+  font-size: 30px;
+  color: #ffffff;
+  transition: color 0.2s ease;
+}
+
+.logo-social{
+  margin-left: 10px;
+}
+
+.social-icon-facebook:hover {
+  color: blue;
+}
+
+.social-icon-youtube:hover {
+  color: red;
+}
+
+.logo-social-footer {
+  margin-left: 10px;
+}
+
 /* End Announces */
 
 
 /* Start Header */
 
 .header-nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
 }
 
 .header-logo {
@@ -142,14 +180,14 @@ body {
 }
 
 .header-logo img {
-  max-height: 200px;
+  max-height: 100px;
   width: auto; 
 }
 
 .header-title {
   margin: 0;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 100%;
   text-align: center;
 }
@@ -195,26 +233,11 @@ body {
   opacity: 1;
 }
 
-.social {
-  display: flex;
-}
-
-.logo-social {
+.icons {
+  position: absolute;
   font-size: 30px;
-  color: #0F2A5B;
-  transition: color 0.2s ease;
-}
-
-.logo-social{
-  margin-left: 10px;
-}
-
-.social-icon-facebook:hover {
-  color: blue;
-}
-
-.social-icon-youtube:hover {
-  color: red;
+  cursor: pointer;
+  display: none;
 }
 
 /* End Header */
