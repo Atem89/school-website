@@ -1,7 +1,88 @@
 @media (max-width: 820px) {
 
     /*Start Header */
+    .nav__burger {
+        display: block;
+        position:relative;
+        width: 45px;
+        height: 25px;
+        cursor: pointer;
 
+    }
+
+    .nav__burger span,
+    .nav__burger::before,
+    .nav__burger::after {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 10%;
+        transition: all .3s ease;
+        background-color: #0F2A5B;
+    }
+
+    .nav__burger::before,
+    .nav__burger::after {
+        content: '';
+    }
+
+    .nav__burger::before {
+        top: 0;
+    }
+
+    .nav__burger::after{
+        bottom: 0;
+    }
+
+    .nav__burger span {
+        top: 44%;
+        transform:  translate(0px -44%);
+        
+    }
+
+    .nav__burger._active span{
+        display: none;
+    }
+
+    .nav__burger._active::before {
+        top: 44%;
+        transform: rotate(-45deg) ;
+        z-index: 3;
+    }
+
+    .nav__burger._active::after {
+        bottom: 44%;
+        transform: rotate(45deg) ;
+        z-index: 3;
+    }
+
+    .nav {
+        position: absolute;
+        top: 73px;
+        right: 0;
+        width: 250px;
+        height: auto;
+        background-color: #fff;
+        padding: 20px;
+        transition: all .5s ease; 
+        opacity: 0;
+        visibility: hidden;
+        padding-bottom: 20px;
+        z-index: 3;
+    }
+
+    .nav._active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        padding-bottom: 20px;
+    }
     /*End Header */
 
     /* Slider Start */

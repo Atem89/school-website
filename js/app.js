@@ -16,6 +16,7 @@ window.addEventListener("load", function () {
 /* End Preloader */
 
 /* Start Slider */
+
 const slides = document.querySelectorAll('.slider__item');
 const btns = document.querySelectorAll('.btn');
 let currentSlide = 1;
@@ -70,6 +71,31 @@ repeat();
 
 /* */
 
+// Open and close burger-menu
+const navBurgerIcon = document.querySelector('.nav__burger');
+const nav = document.querySelector('.nav');
+const body = document.body;
+
+if (navBurgerIcon) {
+    navBurgerIcon.addEventListener("click", function(e) {
+        navBurgerIcon.classList.toggle('_active');
+        nav.classList.toggle('_active');
+    });
+    // close menu on click out field of menu
+    body.addEventListener("click", function(e) {
+        if (!nav.contains(e.target) && !navBurgerIcon.contains(e.target)) {
+            navBurgerIcon.classList.remove('_active');
+            nav.classList.remove('_active');
+        }
+    });
+    // close menu on click link to section
+    nav.addEventListener("click", function(e) {
+        if (!navBurgerIcon.contains(e.target)) {
+            navBurgerIcon.classList.remove('_active');
+            nav.classList.remove('_active');
+        }
+    });
+}
 
 
 /* */

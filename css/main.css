@@ -168,7 +168,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
+  /*z-index: 100;*/ 
 }
 
 .header-logo {
@@ -233,12 +233,10 @@ body {
   opacity: 1;
 }
 
-.icons {
-  position: absolute;
-  font-size: 30px;
-  cursor: pointer;
+.nav__burger {
   display: none;
 }
+
 
 /* End Header */
 
@@ -252,7 +250,7 @@ body {
 }
 
 .slider-list .slider__item {
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   width: 100%;
   height: 100%;
