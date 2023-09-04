@@ -603,6 +603,16 @@ body {
   padding-bottom: 20px;
 }
 
+.logo-social-about {
+  font-size: 30px;
+  color: #31245C;
+  transition: color 0.2s ease;
+}
+
+.logo-social-about:hover {
+  color: #FF8700;
+}
+
 /* End About*/
 
 /* Start Footer */
